@@ -4,7 +4,6 @@ const Schema = mongoose.Schema;
 const organizationSchema = new Schema({
     name: String,
     description: String,
-    id: "",
     services: [{type: Schema.Types.ObjectId, ref: "serviceModel"}]
     
 });
